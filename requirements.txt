@@ -1,0 +1,7 @@
+# Core driver + relay (required).
+pyserial>=3.5
+
+# Only needed for visualize.py (live/one-shot point-cloud rendering).
+# Install manually, or use `pip install -e ".[visual]"`.
+# numpy
+# matplotlib

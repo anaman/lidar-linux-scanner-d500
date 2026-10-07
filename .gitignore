@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Scan output artifacts (these can contain personal/room data; never commit)
+*.png
+*.csv
+*.ply
+*.pcd
+*.npy
+*.lrf
+
+# OS / editor
+.DS_Store
+*.swp
+*~
