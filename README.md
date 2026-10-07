@@ -1,13 +1,13 @@
-# Lidar Linux Scanner D600
+# Lidar Linux Scanner D500
 
-Linux driver and command-line tools for the **Waveshare D600 LiDAR scanner**
+Linux driver and command-line tools for the **Waveshare D500 LiDAR scanner**
 (LDRobot LD06/LD19 serial protocol family). Pure Python, no compilation — read
 the lidar over its USB-serial port, visualize the point cloud, record it to
 CSV/PLY, and relay it over a UART radio link (e.g. the SX1262 LoRa HAT).
 
 > The vendor ships a Windows-only desktop viewer (`ld_desktop`) with no source
 > code. This project re-implements the wire protocol from scratch so the
-> D600 / LD06 / LD19 can be used on Linux, Raspberry Pi, and other SBCs.
+> D500 / LD06 / LD19 can be used on Linux, Raspberry Pi, and other SBCs.
 
 ## Features
 
@@ -19,7 +19,7 @@ CSV/PLY, and relay it over a UART radio link (e.g. the SX1262 LoRa HAT).
 
 ## Hardware
 
-- **Lidar:** Waveshare D600 (also compatible with LD06 / LD19 — identical protocol).
+- **Lidar:** Waveshare D500 (also compatible with LD06 / LD19 — identical protocol).
 - **Interface:** CP2102 USB-UART bridge (USB VID `10c4`), **230400 baud**.
 - On Linux it enumerates as `/dev/ttyUSB*`; the stable symlink is
   `/dev/serial/by-id/usb-*CP2102*`.
@@ -43,8 +43,8 @@ pip install numpy matplotlib                        # for visualize.py
 or install this project itself (editable, from a clone):
 
 ```bash
-git clone https://github.com/<your-account>/lidar-linux-scanner-d600.git
-cd lidar-linux-scanner-d600
+git clone https://github.com/<your-account>/lidar-linux-scanner-d500.git
+cd lidar-linux-scanner-d500
 pip install -e .              # core (installs pyserial)
 pip install -e ".[visual]"    # + numpy/matplotlib
 ```
@@ -109,7 +109,7 @@ more than one CP210x device is attached).
 
 ## 3D scanning
 
-The D600 / LD-series sensor emits one flat 360° ring per scan. To build a true
+The D500 / LD-series sensor emits one flat 360° ring per scan. To build a true
 3D point cloud, mount it on a tilting/rotating stage and use
 `record.py --tilt-start/--tilt-end`; it assumes a uniform sweep and emits
 `(x, y, z)` coordinates. The PLY output opens in CloudCompare, MeshLab, or

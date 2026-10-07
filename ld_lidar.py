@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-ld_lidar.py — Pure-Python driver for the Waveshare D600 LiDAR scanner
+ld_lidar.py — Pure-Python driver for the Waveshare D500 LiDAR scanner
 (LDRobot LD06 / LD19 serial protocol; the same hardware that Waveshare's
 `ld_desktop` Windows tool visualizes).
 
-Verified against a D600 / LD06 unit at 230400 baud.
+Verified against a D500 / LD06 unit at 230400 baud.
 
 Only depends on `pyserial`. No numpy/C extensions are required for parsing.
 

@@ -3,13 +3,13 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lidar-linux-scanner-d600"
+name = "lidar-linux-scanner-d500"
 version = "1.0.0"
-description = "Linux driver and tools for the Waveshare D600 LiDAR scanner (LDRobot LD06/LD19 serial protocol)"
+description = "Linux driver and tools for the Waveshare D500 LiDAR scanner (LDRobot LD06/LD19 serial protocol)"
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "GPL-3.0-or-later" }
-keywords = ["lidar", "ld06", "ld19", "d600", "waveshare", "point-cloud", "lora", "slam"]
+keywords = ["lidar", "ld06", "ld19", "d500", "waveshare", "point-cloud", "lora", "slam"]
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
